@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 .announcement{
     background-color: #111111;
@@ -39,7 +40,7 @@
        
 }
 .tool-bar a:first-child{
-    padding-right: 1.3em;
+    padding-right: 1em;
 }
 .upper{
     display: flex;
@@ -71,6 +72,49 @@
 .header-icon a:first-child{
     padding-right: 2em;
 }
+
+/* .navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.stickyBar{
+    font-size: 1.4em;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+
+}
+/* .site-header{
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+} */
+
+.options a{
+    position: relative;
+    height: 50px;
+    text-decoration: none;
+    color: #333333;
+    padding: 10px 10px;
+    margin:5px;
+}
+.options>a::after{
+    font-family: "ETmoudles";
+    content: "3";
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+    font-weight: 800;
+}
+.banner a img{
+    width: 100%;
+    height: 100%;
+}
+
 
 
 
