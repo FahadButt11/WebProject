@@ -7,7 +7,7 @@
 .announcement{
     background-color: #111111;
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
     
 }
 .announcement p{
@@ -17,7 +17,7 @@
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: .2em;
-    font-size: 1.15em;
+    font-size: 0.85em;
     line-height: 2.5em;
 }
 .tool-bar{
@@ -32,37 +32,34 @@
 .tool-bar a{
     display: inline;
     padding: 5px;
-    margin:12px 0px;
+    margin:6px 0px;
 }
 .tool-bar a svg{
-    width: 1.7em;
-    height: 1.7em;
+    width: 1em;
+    height: 1em;
        
-}
-.tool-bar a:first-child{
-    padding-right: 1em;
 }
 .upper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: 50px; */
-    padding: 10px;
+    margin-top: 28px;
+    /* padding: 10px; */
 }
 .site-header{
     padding: 20px 40px;
     position: sticky;
-    top:0;
+    top:0px;
     background-color: white;
-    z-index: 9999;
+    z-index: 9999;  
 }
 .navBar{
     background-color: #fff;
     z-index: 1000;
 }
 .site-header svg{
-    width: 3em;
-    height: 3em;
+    width: 1.75em;
+    height: 1.75em;
     fill: #444;
 
 }
@@ -70,7 +67,7 @@
     margin: 0px 30px;
 }
 .logo img{
-    width: 17em;
+    width: 10.75em;
 }
 .search{
     margin-left: 1%;
@@ -78,15 +75,12 @@
 .header-icon{
     margin-right: 0.6%;
 }
-.header-icon a:first-child{
-    padding-right: 2em;
-}
 
 
 .stickyBar{
-    font-size: 1.4em;
-    /* margin: 50px 0px; */
-    padding: 10px 0px;
+    font-size: 1.125em;
+    margin: 50px 0px;
+    /* padding: 10px 0px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,8 +93,8 @@
     height: 50px;
     text-decoration: none;
     color: #333333;
-    padding: 10px 10px;
-    margin:5px;
+    padding: 0px 10px;
+    /* margin:5px; */
 }
 .options>a::after{
     font-family: "ETmoudles";
