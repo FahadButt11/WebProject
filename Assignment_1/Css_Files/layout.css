@@ -142,11 +142,13 @@
 }
 .feature-row{
     display: flex;
+    margin: 0 6%;
 
 
 }
 .left-box{
     padding-right: 60px;
+    width: 36em;
 }
 a.btn{
     font-size: 0.9em;
@@ -173,11 +175,16 @@ a.btn{
     text-transform: uppercase;
     font-size: 2.5em;
 }
-.right-box a img{
+/* .right-box a img{
     width: 15.64em;
 
 
-}
+}  */
+ /* .right-box{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+} */
 
 
 
