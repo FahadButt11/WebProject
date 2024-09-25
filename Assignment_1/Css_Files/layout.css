@@ -49,6 +49,7 @@
 .site-header{
     padding: 20px 40px;
     position: sticky;
+    width: 100%;
     top:0px;
     background-color: white;
     z-index: 9999;  
@@ -99,7 +100,7 @@
 .options>a::after{
     font-family: "ETmoudles";
     content: "3";
-    font-size: 16px;
+    font-size: 0.9em;
     position: relative;
     top: 2px;
     font-weight: 800;
@@ -109,7 +110,7 @@
     height: 100%;
 }
 .text{
-    margin:75px 0px;
+    margin:50px 0px;
     text-transform: uppercase;
     text-align: center;
     font-size: 1.4em;
@@ -118,27 +119,65 @@
 .images{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
    
 
 }
 .boy-girl{
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 33px;
     margin:100px 0px;
 }
 .Off img{
-    width: 100%;
+    width: 38em;
 }
-
-/* }
 .card a img{
-    width: 90%;
+    width: 25.5em;
 
 
-} */
+}
+.feature-div{
+    padding: 0px 40px;
+}
+.feature-row{
+    display: flex;
 
+
+}
+.left-box{
+    padding-right: 60px;
+}
+a.btn{
+    font-size: 0.9em;
+    line-height: 1.42;
+    text-decoration: none;
+    text-align: center;
+    white-space: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    display: inline-block;
+    padding: 11px 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #fff;
+    background: #515861;
+}
+.feature-heading{
+    text-align: left;
+    margin: 0 0 15px;
+    color: #515861;
+}
+.feature-heading>h1{
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+.right-box a img{
+    width: 15.64em;
+
+
+}
 
 
 
