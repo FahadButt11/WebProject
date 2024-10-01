@@ -79,8 +79,8 @@
 
 
 .stickyBar{
-    font-size: 1.125em;
-    margin: 50px 0px;
+    font-size: 0.95em;
+    margin: 20px 0px;
     /* padding: 10px 0px; */
     display: flex;
     justify-content: center;
@@ -123,7 +123,7 @@
    
 
 }
-.boy-girl{
+.boy-girl ,.towel-bed{
     display: flex;
     justify-content: center;
     gap: 33px;
@@ -141,14 +141,17 @@
     padding: 0px 40px;
 }
 .feature-row{
-    display: flex;
     margin: 0 6%;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 .left-box{
     padding-right: 60px;
-    width: 36em;
+    /* width: 241px; */
+    min-width: 45%;
+    flex: 0 1 43%;
 }
 a.btn{
     font-size: 0.9em;
@@ -175,17 +178,118 @@ a.btn{
     text-transform: uppercase;
     font-size: 2.5em;
 }
-/* .right-box a img{
-    width: 15.64em;
+.right-box a img{
+    width: 19.6em;
 
 
-}  */
- /* .right-box{
+} 
+.top-pic{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+ .right-box{
     padding: 50px 0px;
     display: flex;
     justify-content: center;
-} */
+}
+.popular-men,.popular-Women{
+    margin: 75px 0px;
+}
 
+.pop-men,.pop-Women{
+    text-align: center;
+}
+.pop-men h2, .pop-Women h2{
+    text-transform: uppercase;
+    color: #515861;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.popularMen-pics, .popularWomen-pics{
+    display: flex;
+    padding: 0 50px;
+    gap: 33px;
+
+
+}
+.men-pic a img, .Women-pic a img{
+    width: 100%;
+}
+
+.page-width{
+    padding: 0 40px;
+    margin: 75px 0;
+}
+.icon-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+.single-box{
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    padding: 30px;
+    width: 25%;
+    text-align: center;
+}
+.single-box>div {
+    display: block;
+    margin-bottom: 10px;
+}
+.single-box div svg{
+    stroke: #f2b202;
+    stroke-width: 6px;
+    fill: none;
+    width: 70px;
+    height: 70px;
+}
+
+.single-box div h2{
+    text-transform: uppercase;
+    color: #515861;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.single-box div p{
+    color: #515861;
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 2em;
+}
+.subscribe-box{
+    background-color: #f1f1f1;
+    color: #515861;
+    padding: 75px 0px;
+}
+.page{
+    padding: 0 40px;
+    text-align: center;
+}
+.first-p p{
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 26px;
+    margin-bottom: 15px;
+    line-height: 1.2em;
+}
+.second-p p{
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 2em;
+    letter-spacing: 0.025em;
+}
+input{
+    border: 1px solid #e8e8e1;
+    max-width: 100%;
+    padding: 8px 10px;
+    border-radius: 0;
+}
 
 
 
