@@ -275,21 +275,79 @@ a.btn{
     text-transform: uppercase;
     font-weight:bold;
     font-size: 26px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     line-height: 1.2em;
 }
 .second-p p{
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     line-height: 2em;
     letter-spacing: 0.025em;
 }
-input{
+
+input[type=email]{
     border: 1px solid #e8e8e1;
-    max-width: 100%;
-    padding: 8px 10px;
+    margin: -5px;
+    width: 259px;
+    padding: 16.44px 10px;
+    border-radius: 0;
+    background-color: unset;
+}
+input[type=button]{
+    line-height: 1.42;
+    text-decoration: none;
+    text-align: center;
+    white-space: normal;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    display: inline-block;
+    padding: 14px 20px;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #ffffff;
+    background: #515861;
     border-radius: 0;
 }
 
+.side-footer{
+    background-color: #111111;
+    color: #f2b202;
+    padding: 60px 0px;
+}
+.page-width1{
+    padding: 0 40px;
+    line-height: 1.4em;
+}
+.last-box{
+    display: flex;
 
+}
+.icon-bottom a{
+    display: block;
+    height: 40px;
+    width: 206px;
+
+}
+.icon-bottom a img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.lists{
+    padding-right: 60px;
+    padding-left: 22px;
+}
+
+.lists p:first-child{
+    margin-bottom: 20px;
+
+}
+.lists p:nth-child(2){
+    margin-bottom: 15px;
+}
+.last-small{
+    text-align: center;
+}
 
