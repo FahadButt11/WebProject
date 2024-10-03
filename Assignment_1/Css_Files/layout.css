@@ -336,18 +336,47 @@ input[type=button]{
     max-height: 100%;
 }
 .lists{
-    padding-right: 60px;
-    padding-left: 22px;
+    padding-right: 120px;
+    padding-left: 50px;
 }
 
 .lists p:first-child{
     margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 14.4px;
 
 }
 .lists p:nth-child(2){
     margin-bottom: 15px;
+    line-height: 2em;
 }
 .last-small{
     text-align: center;
 }
+.lists p a{
+    text-decoration: none;
+    border-bottom: 2px solid rgba(242, 178, 2, 0.1);
+    border-color: rgba(242, 178, 2, 0.1);
+    color: #f2b202;
+    font-size: 15.3px;
+    line-height: 2em;
+    letter-spacing: 0.025;
+    cursor: pointer;
+}
+.third{
+    margin-bottom: 15px;
+    line-height: 2em;
+    font-size: 15.3px;
+}
+.last-small{
+    padding: 7.5px 0px;
+    font-size: 12.6px;
+    margin-right: 50px;
 
+}
+.last-small a{
+    text-decoration: none;
+    color: #f2b202;
+    cursor: pointer;
+}
