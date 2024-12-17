@@ -1,6 +1,7 @@
 const express= require("express");
+const mongoose=require("mongoose");
 let server= express();
-const {createProduct,getAllProducts,deleteProduct,updateProduct}= require("./productOperations")
+ const {createProduct,getAllProducts,deleteProduct,updateProduct}= require("./productOperations")
 // ClusterPassword=> .24eNjRMkYg94MN
 server.use(express.json());
 const products= require("./Routes/Products.route");
@@ -8,14 +9,17 @@ server.use('/products',products);
 
 
 
-const mongoose=require("mongoose");
-mongoose.connect("mongodb+srv://cluster0.2owop.mongodb.net/",{
-    dbName: "E-Commerce",
+
+mongoose.connect("mongodb+srv://cluster0.2owop.mongodb.net/ ",{
+    dbName: "Practise_Store",
     user: "fahadbutt",
     pass: ".24eNjRMkYg94MN",})
     .then(async()=>{
 
     console.log("successfully connected!");
+
+
+
 
     // const p=await createProduct("hello",200,["one","two"]);
     // console.log(p);
