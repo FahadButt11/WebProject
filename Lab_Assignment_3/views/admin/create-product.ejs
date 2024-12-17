@@ -1,0 +1,25 @@
+<h2>Create Product</h2>
+<form action="/admin/products" method="POST" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label>Title</label>
+    <input type="text" name="title" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label>Description</label>
+    <textarea name="description" class="form-control" required></textarea>
+  </div>
+  <div class="mb-3">
+    <label>Price</label>
+    <input type="number" name="price" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label>Stock</label>
+    <input type="number" name="stock" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label>Image</label>
+    <input type="file" name="image" class="form-control" required>
+  </div>
+  <button type="submit" class="btn btn-success">Add Product</button>
+</form>
