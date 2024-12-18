@@ -6,7 +6,7 @@ const connectDB = async () => {
     const conn = await mongoose.connect(process.env.MONGO_URI, {
         dbName: "ChenOne_Store",
         user: process.env.USER,
-        pass: process.env.PASSWORD
+        pass: process.env.PASS
 
     });
     console.log(`MongoDB Connected: ${conn.connection.host}`);

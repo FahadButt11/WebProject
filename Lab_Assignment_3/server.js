@@ -5,7 +5,7 @@ const path = require('path');
 const productRoutes = require('./routes/products.route');
 const adminRoutes= require('./routes/admin.route');
 const methodOverride = require('method-override');
-const expressLayouts = require("express-ejs-layouts");
+// const expressLayouts = require("express-ejs-layouts");
 // const bodyParser = require('body-parser');
 
 // Load environment variables
@@ -14,12 +14,13 @@ dotenv.config();
 // Initialize Express App
 const app = express();
 app.set('view engine', 'ejs');
-app.use(expressLayouts);
+app.use(express.static("public"));
+// app.use(expressLayouts);
 app.use(express.json()); // Parse JSON request bodies
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded data
 app.use(methodOverride('_method'));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-app.set("layout", "layouts/admin");
+// app.set("layout", "layouts/admin");
 // Connect Database
 connectDB();
 
@@ -34,7 +35,11 @@ connectDB();
 
 // Routes
 app.get('/', (req, res) => {
-  res.send('API is running...');
+  res.render("landingPage");
+});
+
+app.get('/portfolio', (req, res) => {
+  res.render('myPortfolio');
 });
 
 // Import Routes

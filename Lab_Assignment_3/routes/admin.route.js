@@ -34,20 +34,21 @@ router.post('/products', upload.single('image'), async (req, res) => {
     description,
     price,
     stock,
-    image: req.file.filename,
+    image: req.file.filename
   });
+  console.log(req.file);
   await newProduct.save();
   res.redirect('/admin/products');
 });
 
 // Edit Product Form
-router.get('/products/:id/edit', async (req, res) => {
+router.get('/products/edit/:id', async (req, res) => {
   const product = await Product.findById(req.params.id);
   res.render('admin/edit-product', { product });
 });
 
 // Update Product
-router.put('/products/:id', upload.single('image'), async (req, res) => {
+router.put('/products/edit/:id', upload.single('image'), async (req, res) => {
   const { title, description, price, stock } = req.body;
   const updateData = {
     title,
