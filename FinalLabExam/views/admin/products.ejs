@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <a href="/admin/dashboard" class="navbar-brand">Admin Panel</a>
+  </nav>
+  <h2>All Products</h2>
+  <a href="/admin/products/new" class="btn btn-success mb-3">Add Product</a>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% products.forEach(product => { %>
+        <tr>
+          <td><img src="public/uploads/<%= product.image %>" width="50" /></td>
+          <td><%= product.title %></td>
+          <td>$<%= product.price %></td>
+          <td><%= product.stock %></td>
+          <td>
+            <a href="/admin/products/edit/<%= product._id %>" class="btn btn-warning btn-sm">Edit</a>
+            <form action="/admin/products/<%= product._id %>?_method=DELETE" method="POST" style="display:inline;">
+              <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+            </form>
+          </td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+  
+  
+</body>
+</html>
+
