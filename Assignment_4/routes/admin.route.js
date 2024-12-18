@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const Product = require('../models/products.model');
-const Order= require("../models/order.model");
 
 // Multer setup for image upload
 const storage = multer.diskStorage({
@@ -60,11 +59,6 @@ router.put('/products/edit/:id', upload.single('image'), async (req, res) => {
   if (req.file) updateData.image = req.file.filename; // Update image if uploaded
   await Product.findByIdAndUpdate(req.params.id, updateData);
   res.redirect('/admin/products');
-});
-router.get('/orders', async (req, res) => {
-  const orders = await Order.find().sort({ createdAt: -1 });
-  console.log(orders);
-  res.render('./admin/admin_orders', { orders });
 });
 
 // Delete Product

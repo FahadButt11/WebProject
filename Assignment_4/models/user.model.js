@@ -8,4 +8,3 @@ let usersSchema = mongoose.Schema({
 let UserModel = mongoose.model("User", usersSchema);
 
 module.exports = UserModel;
-

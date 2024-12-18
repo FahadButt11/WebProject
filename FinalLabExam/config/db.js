@@ -4,7 +4,7 @@ require('dotenv').config();
 const connectDB = async () => {
   try {
     const conn = await mongoose.connect(process.env.MONGO_URI, {
-        dbName: "Web_Project",
+        dbName: "Web_Project1",
         user: process.env.USER,
         pass: process.env.PASS
 

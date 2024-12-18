@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Product</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Admin Navbar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <a href="/admin/dashboard" class="navbar-brand">Admin Panel</a>
+  </nav>
+
+  <!-- Edit Product Form -->
+  <div class="container mt-5">
+    <h2>Edit Product</h2>
+    <form action="/admin/products" method="PUT" enctype="multipart/form-data">
+      
+      <!-- Title Field -->
+      <div class="mb-3">
+        <label>Title</label>
+        <input type="text" name="title" class="form-control" value="<%= product.title %>" required>
+      </div>
+      
+      <!-- Description Field -->
+      <div class="mb-3">
+        <label>Description</label>
+        <textarea name="description" class="form-control" required><%= product.description %></textarea>
+      </div>
+
+      <!-- Price Field -->
+      <div class="mb-3">
+        <label>Price</label>
+        <input type="number" name="price" class="form-control" value="<%= product.price %>" required>
+      </div>
+      
+      <!-- Stock Field -->
+      <div class="mb-3">
+        <label>Stock</label>
+        <input type="number" name="stock" class="form-control" value="<%= product.stock %>" required>
+      </div>
+
+      <!-- Image Upload (Optional) -->
+      <div class="mb-3">
+        <label>Image</label>
+        <input type="file" name="image" class="form-control">
+        <small>Leave blank if you don't want to update the image.</small>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary">Update Product</button>
+      <a href="/admin/products" class="btn btn-secondary">Cancel</a>
+    </form>
+  </div>
+
+</body>
+</html>
